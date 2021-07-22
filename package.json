@@ -1,0 +1,15 @@
+{
+  "name": "sf-drive_homework",
+  "version": "1.0.0",
+  "description": "study project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass src/scss/ -o src/css/ -w"
+  },
+  "author": "g-anka",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
