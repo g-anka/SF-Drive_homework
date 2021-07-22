@@ -1,0 +1,93 @@
+@import "variables";
+@import "fonts";
+@import "normalize";
+@import "mixins";
+@import "header";
+@import "footer";
+
+/*
+main
+*/
+
+.main {
+    text-align: center;
+
+    &__heading {
+        margin: 120px 0px 60px;
+        @include breakpoint (small) {
+            margin: 60px 0px 30px;
+        }
+
+        & p {
+            font-size: 24px;
+            line-height: 147.3%;
+            @include breakpoint (small) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__questions {
+        margin: 60px 207px 120px;
+        @include breakpoint (small) {
+            margin: 30px 20px 50px;
+        }
+
+        &-btn {
+            background-color:#F7F7F8;
+            border: 0px; 
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 147.3%;
+            cursor: pointer;
+            text-align: left;
+            outline: none;
+            padding: 19px 29px 18px 22px;
+            width: 100%;
+            margin: 14px 0px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            @include breakpoint(small) {
+                padding: 14px 22px 14px 20px;
+                margin: 15px 0px;
+                font-size: 14px;
+            }
+
+            &:after {
+                content: url("/src/img/btn-collapsible.svg");
+                float: right;
+                margin-left: 30px; 
+            }
+
+            &:hover {
+                background-color: $light-green-01;
+            }
+        }
+
+        &-content {
+            padding: 20px 0px 40px;
+            text-align: left;
+            margin: 20px 22px 40px;
+            font-size: 20px;
+            line-height: 147.3%;
+            display: none;
+            overflow: hidden;
+            @include breakpoint (small) {
+                margin: 15px 20px 30px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.active {
+    color: $dark-green;
+    background-color: $light-green-015;
+    font-family: "Roboto Medium";
+
+    &:after {
+        content: url("/src/img/btn-collapsible-active.svg");
+    }
+}

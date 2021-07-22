@@ -1,0 +1,58 @@
+@import "variables";
+@import "mixins";
+
+/*
+header
+*/
+
+.header {
+    margin: 31px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    @include breakpoint(small) {
+        margin: 20px;
+    }
+
+    &__logo {
+        cursor: pointer;
+        margin-right: auto;
+    }
+
+    &__nav a {
+        color: $base-black;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 19px;
+        cursor: pointer;
+        padding-left: 30px;
+    
+        &:hover {
+            color: $dark-green;
+        }
+    }
+
+    &__btn {
+        background-color: $white;
+        border: 1px solid rgba(27, 27, 27, 0.4);
+        margin-left: 30px;
+        padding: 12px 30px;
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: "Roboto Medium";
+
+        &:hover {
+            font-family: "Roboto Bold";
+            background-color: $dark-green;
+            border: 1px solid rgb(97, 161, 153);
+            cursor: pointer;
+        }
+    
+    }
+
+    img {
+        cursor: pointer;
+    }
+}

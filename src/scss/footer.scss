@@ -1,0 +1,65 @@
+@import "variables";
+@import "mixins";
+
+/*
+footer
+*/
+
+.footer {
+    background: $dark-purple;
+    padding: 53px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint(small) {
+        padding: 30px 20px;
+        display: block;
+    }
+
+    &__copyright {
+        color: $white;
+        opacity: 0.4;
+        font-size: 16px;
+        line-height: 19px;
+        @include breakpoint(small) {
+            margin-bottom: 17px;
+        }
+    }
+
+    &__right-social {
+        a {
+        cursor: pointer;
+        padding-left: 20px;
+        background-repeat: no-repeat;
+        }
+    }
+    
+}
+
+#icon-vk {
+    @include icon-social;
+    background-image: url("/src/img/icon-vkontakte.png");
+
+    &:hover {
+        background-image: url("/src/img/icon-vk-hover.png");
+    }
+}
+
+
+#icon-insta {
+    @include icon-social;
+    background-image: url("/src/img/icon-insta.png");
+
+    &:hover {
+        background-image: url("/src/img/icon-insta-hover.png");
+    }
+}
+
+#icon-fb {
+    @include icon-social;
+    background-image: url("/src/img/icon-fb.png");
+
+    &:hover {
+        background-image: url("/src/img/icon-fb-hover.png");
+    }
+}

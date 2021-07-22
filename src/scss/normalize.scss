@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+
+body {
+    padding: 0px;
+    margin: 0px;
+    color: $base-black;
+    font-family: "Roboto Regular";
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 120%;
+    font-family: "Roboto Bold";
+    margin: 60px auto 30px;
+    @include breakpoint(small) {
+        font-size: 32px;
+        margin: 40px auto 10px;
+    }
+}
+
+h2 {
+    font-size: 48px;
+    font-family: "Roboto Medium";
+    line-height: 120%;
+    padding-top: 80px;
+    margin: 0px;
+    @include breakpoint(small) {
+        font-size: 24px;
+        padding-top: 40px;
+    }
+}
+
+.is-desktop {
+    @include breakpoint(small) {
+    display: none !important;
+    }
+}
+
+.is-mobile {
+    @include breakpoint(large) {
+    display: none !important;
+    }
+}
