@@ -1,0 +1,38 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  color: #1B1B1B;
+  font-family: "Roboto Regular"; }
+
+p {
+  margin: 0px;
+  padding: 0px; }
+
+h1 {
+  font-size: 64px;
+  line-height: 120%;
+  font-family: "Roboto Bold";
+  margin: 60px auto 30px; }
+  @media screen and (max-width: 800px) {
+    h1 {
+      font-size: 32px;
+      margin: 40px auto 10px; } }
+
+h2 {
+  font-size: 48px;
+  font-family: "Roboto Medium";
+  line-height: 120%;
+  padding-top: 80px;
+  margin: 0px; }
+  @media screen and (max-width: 800px) {
+    h2 {
+      font-size: 24px;
+      padding-top: 40px; } }
+
+@media screen and (max-width: 800px) {
+  .is-desktop {
+    display: none !important; } }
+
+@media screen and (min-width: 801px) {
+  .is-mobile {
+    display: none !important; } }

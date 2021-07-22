@@ -1,0 +1,49 @@
+/*
+footer
+*/
+.footer {
+  background: #3F3D56;
+  padding: 53px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (max-width: 800px) {
+    .footer {
+      padding: 30px 20px;
+      display: block; } }
+  .footer__copyright {
+    color: #FFFFFF;
+    opacity: 0.4;
+    font-size: 16px;
+    line-height: 19px; }
+    @media screen and (max-width: 800px) {
+      .footer__copyright {
+        margin-bottom: 17px; } }
+  .footer__right-social a {
+    cursor: pointer;
+    padding-left: 20px;
+    background-repeat: no-repeat; }
+
+#icon-vk {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("/src/img/icon-vkontakte.png"); }
+  #icon-vk:hover {
+    background-image: url("/src/img/icon-vk-hover.png"); }
+
+#icon-insta {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("/src/img/icon-insta.png"); }
+  #icon-insta:hover {
+    background-image: url("/src/img/icon-insta-hover.png"); }
+
+#icon-fb {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("/src/img/icon-fb.png"); }
+  #icon-fb:hover {
+    background-image: url("/src/img/icon-fb-hover.png"); }
